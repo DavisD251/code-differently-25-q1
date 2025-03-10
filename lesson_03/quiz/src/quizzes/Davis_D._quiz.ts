@@ -47,7 +47,7 @@ export class DavisDQuiz implements QuizQuestionProvider {
   private static makeQuestion3(): QuizQuestion {
     return new MultipleChoiceQuizQuestion(
       3,
-      'If we flip a coin...',
+      'If we flip a coin...?',
       new Map<AnswerChoice, string>([
         [AnswerChoice.A, 'Heads'],
         [AnswerChoice.B, 'Tails'],
