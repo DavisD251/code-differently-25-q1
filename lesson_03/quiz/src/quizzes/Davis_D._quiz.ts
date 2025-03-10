@@ -28,7 +28,7 @@ export class DavisDQuiz implements QuizQuestionProvider {
         [AnswerChoice.C, 'Afro/HighTop'],
         [AnswerChoice.D, 'The Mullet'],
       ]),
-      AnswerChoice.UNANSWERED,
+      AnswerChoice.A,
     ); // Replace `UNANSWERED` with the correct answer.
   }
 
@@ -40,7 +40,7 @@ export class DavisDQuiz implements QuizQuestionProvider {
         [AnswerChoice.A, 'No'],
         [AnswerChoice.B, 'Yes'],
       ]),
-      AnswerChoice.UNANSWERED,
+      AnswerChoice.A,
     ); // Provide an answer.
   }
 
@@ -51,8 +51,9 @@ export class DavisDQuiz implements QuizQuestionProvider {
       new Map<AnswerChoice, string>([
         [AnswerChoice.A, 'Heads'],
         [AnswerChoice.B, 'Tails'],
+        [AnswerChoice.C, 'Both'],
       ]),
-      AnswerChoice.UNANSWERED,
+      AnswerChoice.C,
     ); // Replace `UNANSWERED` with the correct answer.
   }
 }
