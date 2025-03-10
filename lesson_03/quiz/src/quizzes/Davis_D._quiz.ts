@@ -11,10 +11,14 @@ export class DavisDQuiz implements QuizQuestionProvider {
   }
 
   makeQuizQuestions(): QuizQuestion[] {
-    return [DavisDQuiz.makeQuestion0(), DavisDQuiz.makeQuestion1()];
+    return [
+      DavisDQuiz.makeQuestion1(),
+      DavisDQuiz.makeQuestion2(),
+      DavisDQuiz.makeQuestion3(),
+    ];
   }
 
-  private static makeQuestion0(): QuizQuestion {
+  private static makeQuestion1(): QuizQuestion {
     return new MultipleChoiceQuizQuestion(
       1,
       'What is the best hairstlye?',
@@ -28,19 +32,19 @@ export class DavisDQuiz implements QuizQuestionProvider {
     ); // Replace `UNANSWERED` with the correct answer.
   }
 
-  private static makeQuestion1(): QuizQuestion {
+  private static makeQuestion2(): QuizQuestion {
     return new MultipleChoiceQuizQuestion(
-      2,  
+      2,
       'Are Hotdogs Sandwhiches?',
       new Map<AnswerChoice, string>([
         [AnswerChoice.A, 'No'],
-        [AnswerChoice.B, 'Yes']
-      ])
+        [AnswerChoice.B, 'Yes'],
+      ]),
       AnswerChoice.UNANSWERED,
     ); // Provide an answer.
   }
 
-  private static makeQuestion1(): QuizQuestion {
+  private static makeQuestion3(): QuizQuestion {
     return new MultipleChoiceQuizQuestion(
       3,
       'If we flip a coin...',
