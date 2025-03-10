@@ -7,7 +7,7 @@ import {
 
 export class DavisDQuiz implements QuizQuestionProvider {
   getProviderName(): string {
-    return 'DavisD.';
+    return 'DavisD';
   }
 
   makeQuizQuestions(): QuizQuestion[] {
